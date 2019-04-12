@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>대출 가능한지 확인하는거</h2>
+    <hr>
+    원래 하나씩 입력 받아야 하는데 그냥 덩어리로 입력 받겠음<br>
+    이럴라고 했는데 망했음<br>
+
+    <form action="/one" method="post">
+        28,Private,338409,Bachelors,13,Married-civ-spouse,Prof-specialty,Wife,Black,Female,0,0,40,Cuba,<=50K<br>
+
+        1age<input type="number" name="age"><br>
+        2workclass<input type="text" name="workclass"><br>
+        3fnlwgt<input type="text" name="fnlwgt"><br>
+        4education<input type="text" name="education"><br>
+        5education_num<input type="text" name="education_num"><br>
+        6marital_status<input type="text" name="marital_status"><br>
+        7occupation<input type="text" name="occupation"><br>
+        8relationship<input type="text" name="relationship"><br>
+        9race<input type="text" name="race"><br>
+        10sex<input type="text" name="sex"><br>
+        11capital_gain<input type="text" name="capital_gain"><br>
+        12capital_loss<input type="text" name="capital_loss"><br>
+        13hours_per_week<input type="text" name="hours_per_week"><br>
+        14native_country<input type="text" name="native_country"><br>
+        15income<input type="text" name="income"><br>
+
+
+        <input type="submit" value="검색"><br>
+        {% if msg != '' %}
+            {{msg}}
+        {% endif %}
+    </form>
+
+
+</body>
+</html>
